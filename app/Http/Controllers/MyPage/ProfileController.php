@@ -3,13 +3,14 @@
 namespace App\Http\Controllers\MyPage;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Http\Requests\Mypage\Profile\EditRequest;
 use Illuminate\Http\File;
+use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
+use Illuminate\Database\Eloquent\Model;
 
 class ProfileController extends Controller
 {
